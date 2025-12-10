@@ -1,0 +1,8 @@
+.rounded-img { 
+    /* Adjust the value to make the corners more or less round */ 
+    border-radius: 15px; 
+    /* Set your desired width */
+    width: 350px; 
+    /* Maintain the aspect ratio */ 
+    height: auto; 
+}

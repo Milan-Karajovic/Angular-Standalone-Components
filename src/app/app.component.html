@@ -1,0 +1,62 @@
+<header>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img
+          src="assets/images/MilanKarajovicLogo.png"
+          alt="Logo"
+          height="24px"
+          class="d-inline-block align-text-top"
+        />
+        Milan Karajovic
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        (click)="toggleNavbar()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a 
+              class="nav-link active" 
+              aria-current="page" 
+              (click)="switchNavbar('')"
+              style="cursor: pointer;"
+            >
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a 
+              class="nav-link" 
+              (click)="switchNavbar('about')"
+              style="cursor: pointer;"
+            >
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a 
+              class="nav-link" 
+              (click)="switchNavbar('contact')"
+              style="cursor: pointer;"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
